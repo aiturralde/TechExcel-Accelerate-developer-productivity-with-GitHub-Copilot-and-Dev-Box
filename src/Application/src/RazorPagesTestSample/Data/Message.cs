@@ -16,8 +16,9 @@ namespace RazorPagesTestSample.Data
         /// <remarks>
         /// The message is required and must be a text with a maximum length of 200 characters.
         /// </remarks>
-        /// <exception cref="ValidationException">
-        /// Thrown when the text message exceeds the 200 character limit.
+        /// <exception cref="System.ComponentModel.DataAnnotations.ValidationException">
+        /// Thrown when the text exceeds the 200 character limit.
+
         /// </exception>
         [Required]
         [DataType(DataType.Text)]
